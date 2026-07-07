@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h3>Notes</h3>
+    <button id="btn" onclick="navopen()">☰
+    </button>
+     <nav>
+      <a href="#nostes">Notes</a>
+      <a href="#tasks">Tasks</a>
+     </nav>
+  </header>
+  
+  <main>
+    <div id="nostes">
+      <h2 style="width: 90vw;">Nostes</h2><br>
+      
+    </div>
+      
+    <div id="tasks">
+      <h2>Tasks</h2>
+      
+    </div>
+  </main>
+  
+  <button id="create" onclick="create()">+</button>
+  <div id="tn">
+    <button onclick="not()">Nostes</button>
+    <button onclick="task()">Tasks</button>
+  </div>
+  <div class="inp">
+    <input type="text" placeholder="title..." id="inputty">
+    <textarea placeholder="content"></textarea>
+    <button onclick="save1()" onclick='if (inputty.value === "" || daata.value === "") {
+    alert('Error');
+    return;
+  }else{save2()}' id="save">save</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
